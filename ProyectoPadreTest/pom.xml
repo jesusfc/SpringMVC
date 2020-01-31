@@ -1,0 +1,109 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.jesusfc</groupId>
+	<artifactId>ProyectoPadreTest</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>ProyectoPadreTest</name>
+	<description>Proyecto padre multimodulo para dependencias</description>
+	<!-- http://maven.apache.org/pom.html#Aggregation -->
+
+	<properties>
+		<java.version>1.8</java.version>
+		<encoding.version>UTF-8</encoding.version>
+		<junit.version>4.12</junit.version>
+		<log4j.version>1.2.17</log4j.version>
+		<spring.version>5.0.7.RELEASE</spring.version>
+		<!-- spring.version>4.3.9.RELEASE</spring.version-->		
+		<springData.version>2.1.3.RELEASE</springData.version>
+	</properties>
+
+	<!-- DEPENDENCIAS -->
+	<dependencyManagement>
+		<dependencies>
+			<!-- JUNIT -->
+			<!-- https://mvnrepository.com/artifact/junit/junit -->
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>${junit.version}</version>
+			</dependency>
+
+			<!-- LOGS UTILIDADES -->
+			<dependency>
+				<groupId>log4j</groupId>
+				<artifactId>log4j</artifactId>
+				<version>${log4j.version}</version>
+			</dependency>
+
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.7.0</version>
+					<configuration>
+						<source>${java.version}</source>
+						<target>${java.version}</target>
+						<encoding>${encoding.version}</encoding>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-resources-plugin</artifactId>
+					<version>3.0.2</version>
+					<configuration>
+						<encoding>${encoding.version}</encoding>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-war-plugin</artifactId>
+					<version>3.2.0</version>
+					<configuration>
+						<failOnMissingWebXml>false</failOnMissingWebXml>
+					</configuration>
+				</plugin>
+				<!-- 
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-checkstyle-plugin</artifactId>
+					<version>2.9.1</version>
+					<executions>
+						<execution>
+							<goals>
+								<goal>check</goal>
+							</goals>
+						</execution>
+					</executions>
+					<configuration>
+						<configLocation>../ProyectoPadreTest/checkstyle.xml</configLocation>
+						<encoding>UTF-8</encoding>
+						<logViolationsToConsole>true</logViolationsToConsole>
+						<failsOnError>true</failsOnError>
+						<includeTestSourceDirectory>true</includeTestSourceDirectory>
+						<violationSeverity>warning</violationSeverity>
+					</configuration>
+				</plugin>
+					 -->			
+			</plugins>
+	</build>
+	
+	<modules>
+		<module>../SpringMVC-Test</module>
+		<module>../test-business-model</module>
+		<module>../test-service-layer</module>
+		<module>../test-database-dao</module>
+		<module>../test-database-dao-jpa</module>
+		<module>../test-database-dao-jpa-hibernate</module>
+		<module>../javaUtil</module>
+		<module>../WebService-Server-Test</module>
+		<!--module>../Springboot-Test</module-->
+	</modules>
+
+</project>
