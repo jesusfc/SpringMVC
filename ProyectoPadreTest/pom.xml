@@ -101,9 +101,6 @@
 		<module>../test-database-dao</module>
 		<module>../test-database-dao-jpa</module>
 		<module>../test-database-dao-jpa-hibernate</module>
-		<module>../javaUtil</module>
-		<module>../WebService-Server-Test</module>
-		<!--module>../Springboot-Test</module-->
 	</modules>
 
 </project>
