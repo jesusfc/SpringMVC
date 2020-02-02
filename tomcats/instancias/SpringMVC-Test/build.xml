@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<project name="SpringMVC-Test" basedir="../../conf">
+
+	<include file="../../base.xml" as="base"/>
+	
+	<target name="start" description="">
+		<antcall target="base.start">
+			<param name="app-name" value="SpringMVC-Test" />
+			<param name="tomcat-name" value="tomcat-8.5.29" />
+		</antcall>
+	</target>
+
+	<target name="stop" description="">
+		<antcall target="base.stop">
+			<param name="app-name" value="SpringMVC-Test" />
+			<param name="tomcat-name" value="tomcat-8.5.29" />
+		</antcall>
+	</target>
+	
+	<target name="restart" description="">
+		<antcall target="base.restart">
+			<param name="app-name" value="SpringMVC-Test" />
+			<param name="tomcat-name" value="tomcat-8.5.29" />
+		</antcall>
+	</target>
+
+</project>

@@ -1,0 +1,46 @@
+20-Dec-2019 10:11:36.593 ADVERTENCIA [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Server/Service/Engine/Host} Setting property 'xmlValidation' to 'false' did not find a matching property.
+20-Dec-2019 10:11:36.595 ADVERTENCIA [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Server/Service/Engine/Host} Setting property 'xmlNamespaceAware' to 'false' did not find a matching property.
+20-Dec-2019 10:11:36.636 ADVERTENCIA [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Server/Service/Engine/Host/Context/Valve} Setting property 'resolveHosts' to 'false' did not find a matching property.
+20-Dec-2019 10:11:36.639 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.29
+20-Dec-2019 10:11:36.640 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 5 2018 13:11:12 UTC
+20-Dec-2019 10:11:36.641 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.29.0
+20-Dec-2019 10:11:36.642 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+20-Dec-2019 10:11:36.643 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.15.0-72-generic
+20-Dec-2019 10:11:36.644 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+20-Dec-2019 10:11:36.644 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /home/pmiinf61/MisProgramas/JDKs/jdk1.8.0_171/jre
+20-Dec-2019 10:11:36.645 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_171-b11
+20-Dec-2019 10:11:36.646 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+20-Dec-2019 10:11:36.646 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/pmiinf61/MisPruebas/WorkSpace/tomcats/instancias/SpringMVC-Test
+20-Dec-2019 10:11:36.647 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/pmiinf61/MisPruebas/WorkSpace/tomcats/tomcatFisicos/tomcat-8.5.29
+20-Dec-2019 10:11:36.648 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/pmiinf61/MisPruebas/WorkSpace/tomcats/instancias/SpringMVC-Test/conf/logging.properties
+20-Dec-2019 10:11:36.648 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Dec-2019 10:11:36.649 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xverify:none
+20-Dec-2019 10:11:36.650 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Ddesarrollo=true
+20-Dec-2019 10:11:36.650 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dtest=true
+20-Dec-2019 10:11:36.653 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.rmi.server.RMIClassLoaderSpi=com.jumbotours.utils.tomcat.rmi.RMIClassLoaderSpiImpl
+20-Dec-2019 10:11:36.654 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.proxyHost=proxy.services.gjt
+20-Dec-2019 10:11:36.654 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.proxyPort=3128
+20-Dec-2019 10:11:36.655 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.nonProxyHosts=jip.easytravelsystem.com|89.140.150.*|localhost|192.168.8.*|as400.jumbotours.com
+20-Dec-2019 10:11:36.656 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -XX:+UnlockCommercialFeatures
+20-Dec-2019 10:11:36.656 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -XX:+FlightRecorder
+20-Dec-2019 10:11:36.657 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+20-Dec-2019 10:11:36.657 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+20-Dec-2019 10:11:36.658 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -agentlib:jdwp=transport=dt_socket,address=7008,server=y,suspend=n
+20-Dec-2019 10:11:36.658 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dlog4j.configuration=file:/home/pmiinf61/MisPruebas/WorkSpace/SpringMVC-Test/src/main/resources/properties/log4j.properties
+20-Dec-2019 10:11:36.659 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dproperties.path=file:/home/pmiinf61/MisPruebas/WorkSpace/SpringMVC-Test/src/main/resources/properties/system.properties
+20-Dec-2019 10:11:36.660 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+20-Dec-2019 10:11:36.660 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/pmiinf61/MisPruebas/WorkSpace/tomcats/instancias/SpringMVC-Test
+20-Dec-2019 10:11:36.661 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/pmiinf61/MisPruebas/WorkSpace/tomcats/tomcatFisicos/tomcat-8.5.29
+20-Dec-2019 10:11:36.661 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/pmiinf61/MisPruebas/WorkSpace/tomcats/instancias/SpringMVC-Test/temp
+20-Dec-2019 10:11:36.662 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+20-Dec-2019 10:11:36.809 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-7080"]
+20-Dec-2019 10:11:36.821 INFORMACIÓN [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+20-Dec-2019 10:11:36.825 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-7009"]
+20-Dec-2019 10:11:36.827 INFORMACIÓN [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+20-Dec-2019 10:11:36.828 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.load Initialization processed in 552 ms
+20-Dec-2019 10:11:36.850 INFORMACIÓN [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+20-Dec-2019 10:11:36.851 INFORMACIÓN [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.29
+20-Dec-2019 10:11:39.275 INFORMACIÓN [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+20-Dec-2019 10:11:41.026 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-7080"]
+20-Dec-2019 10:11:41.041 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-7009"]
+20-Dec-2019 10:11:41.051 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.start Server startup in 4222 ms

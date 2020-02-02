@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>test-service-layer</artifactId>
+  <name>test-service-layer</name>
+  <description>Capa de servicio para pruebas</description>
+  
+    
+    <parent>
+		<relativePath>../ProyectoPadreTest/pom.xml</relativePath>
+		<groupId>com.jesusfc</groupId>		
+		<artifactId>ProyectoPadreTest</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+          
+  	<!-- DEPENDENCIAS -->
+	<dependencies>
+	
+		<!-- Modelo de datos -->
+		<dependency>
+			<groupId>com.jesusfc</groupId>
+			<artifactId>test-business-model</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		
+		<!-- Base de datos access - CAPA DE PERSISTENCIA. CAMBIAMOS EL artifactId Y CAMBIAMOS LA IMPLEMENTACION -->
+		<dependency>
+			<groupId>com.jesusfc</groupId>
+			<!-- artifactId>test-database-dao</artifactId -->
+			<artifactId>test-database-dao-jpa</artifactId>
+			<!-- artifactId>test-database-dao-jpa-hibernate</artifactId-->
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>		
+				
+	</dependencies>	
+  
+</project>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="home" extends="defaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/pages/home.jsp" />
+	</definition>
+	
+	<definition name="userList" extends="defaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/pages/userList.jsp" />
+	</definition>
+	
+	<definition name="checkForm" extends="defaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/pages/checkForm.jsp" />
+	</definition>
+	
+	<definition name="htmlCssTest" extends="defaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/pages/htmlCssTest.jsp" />
+	</definition>
+	
+	<definition name="jstlLibTest" extends="defaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/pages/jstlLibTest.jsp" />
+	</definition>	
+	
+	<definition name="angularJSTest" extends="angularJSTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/pages/angularJSTest.jsp" />		
+		<put-attribute name="angularJSController" value="/js/angularJSTest/controller.jsp" />
+		<put-attribute name="angularJSService" value="/js/angularJSTest/service.jsp" />		
+	</definition>
+	
+	<definition name="bootstrapTest" extends="defaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/pages/bootstrapTest.jsp" />
+	</definition>
+		
+</tiles-definitions>

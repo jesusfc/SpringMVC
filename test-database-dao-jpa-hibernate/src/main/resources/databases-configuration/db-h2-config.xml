@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:cache="http://www.springframework.org/schema/cache" 
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/jdbc 
+		http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+		http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+		http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx-4.2.xsd
+		http://www.springframework.org/schema/context
+	    http://www.springframework.org/schema/context/spring-context-4.2.xsd
+	    http://www.springframework.org/schema/util 
+    	http://www.springframework.org/schema/util/spring-util-4.2.xsd">
+
+
+	<!-- Scans within the base package of the application for @Component classes 
+		to configure as beans -->
+	<context:component-scan base-package="com" />
+<!-- 
+	<tx:annotation-driven />
+ -->
+	<!-- Configure properties files -->
+	<context:property-placeholder location="classpath:properties/database-h2.properties" ignore-unresolvable="true" order="1" />
+
+	<!-- DataSource Definition -->
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="${database.dataSource.driverClassName}" />
+		<property name="url" value="${database.dataSource.url}" />
+		<property name="username" value="${database.dataSource.username}" />
+		<property name="password" value="${database.dataSource.password}" />
+	</bean>
+
+	<!-- JDBC TransactionManager Bean -->
+	<bean id="transactionManagerJDBC" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+		<!-- 
+	<jdbc:embedded-database id="dataSource" type="H2"> 
+		<jdbc:script location="classpath:databases-configuration/sql/create-db.sql"/>
+	</jdbc:embedded-database>
+	
+		<jdbc:script location="classpath:databases-configuration/sql/insert-data.sql"/>
+		 --> 
+	<!-- enabled="#{systemProperties.INITIALIZE_DATABASE} -->
+	<jdbc:initialize-database data-source="dataSource" enabled="false">
+		<jdbc:script location="classpath:databases-configuration/sql/create-db.sql" />	
+		<jdbc:script location="classpath:databases-configuration/sql/insert-data.sql" />
+	</jdbc:initialize-database>
+<!-- 
+ -->
+
+
+</beans>

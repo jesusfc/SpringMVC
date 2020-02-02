@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<project name="Tomcats" default="RUNNING" basedir="./conf">
+
+	<!-- TARGET GENERICOS -->
+	<target name="RUNNING">
+		<exec executable="./show_running.sh" />
+	</target>
+
+	<target name="STOP-ALL" description="STOP ALL">
+		<exec executable="./stop_all.sh" />
+	</target>
+
+	<target name="CLEAN-ALL" description="CLEAN ALL">
+		<exec executable="./clean_all.sh" />
+	</target>
+
+	<!-- es TOMCAT_6 x defecto, a no ser que venga seteada la propiedad tomcat-name -->
+	<target name="setTomcat" >
+		<condition property="tomcat-name" value="TOMCAT_6">
+			<not>
+				<isset property="tomcat-name"/>
+			</not>
+		</condition>
+	</target>
+
+	<target name="start" depends="setTomcat">
+		<exec executable="./startup.sh" >
+			<arg value="${app-name}" />
+			<arg value="${tomcat-name}" />
+		</exec>
+	</target>
+	
+	<target name="stop" depends="setTomcat">
+		<exec executable="./shutdown.sh">
+			<arg value="${app-name}" />
+			<arg value="${tomcat-name}" />
+		</exec>
+	</target>
+
+	<target name="restart">
+		<antcall target="stop" />
+		<antcall target="start" />
+	</target>
+
+</project>
