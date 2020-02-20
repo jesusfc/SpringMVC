@@ -95,12 +95,12 @@
 	</build>
 	
 	<modules>
-		<module>SpringMVC-Test</module>
 		<module>test-business-model</module>
 		<module>test-service-layer</module>
 		<module>test-database-dao</module>
 		<module>test-database-dao-jpa</module>
 		<module>test-database-dao-jpa-hibernate</module>
+		<module>SpringMVC-Test</module>
 	</modules>
 
 </project>
