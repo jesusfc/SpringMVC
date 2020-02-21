@@ -25,8 +25,8 @@
 		<!-- Base de datos access - CAPA DE PERSISTENCIA. CAMBIAMOS EL artifactId Y CAMBIAMOS LA IMPLEMENTACION -->
 		<dependency>
 			<groupId>com.jesusfc</groupId>
-			<!-- artifactId>test-database-dao</artifactId -->
-			<artifactId>test-database-dao-jpa</artifactId>
+			<artifactId>test-database-dao</artifactId>
+			<!-- <artifactId>test-database-dao-jpa</artifactId> -->
 			<!-- artifactId>test-database-dao-jpa-hibernate</artifactId-->
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>		
