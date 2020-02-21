@@ -46,7 +46,7 @@ public final class UserDaoTest {
 		assertTrue(userDao.save(user) == 1);
 	}
 
-	@Test
+	//@Test
 	public void testFindAllUsers() throws Exception {
 
 		List<User> findAll = userDao.findAll();
@@ -56,7 +56,7 @@ public final class UserDaoTest {
 		assertTrue(!findAll.isEmpty());
 	}
 
-	@Test
+	//@Test
 	public void testFindUsersById() throws Exception {
 		User user = userDao.findById(Integer.valueOf("2")).get();
 		System.out.println(user.toString());

@@ -21,7 +21,7 @@ public class InitializeDataBaseTest {
 	@Autowired
 	private DataSource dataSource;
 	
-	@Test
+	//@Test
 	public void shouldConnectDataSourceH2() throws SQLException {
 		Connection connection = dataSource.getConnection();
 		assertFalse(connection.isClosed());
