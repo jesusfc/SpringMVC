@@ -25,6 +25,7 @@
 			<groupId>com.jesusfc</groupId>
 			<artifactId>test-business-model</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<!-- Spring -->
