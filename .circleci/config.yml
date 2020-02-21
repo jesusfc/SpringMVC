@@ -2,10 +2,9 @@ version: 2.1
 
 orbs:
   maven: circleci/maven@0.0.12
-
+steps: 
+    - run: mvn clean install
 workflows:
   maven_test:
-    jobs:
-      - maven/clean
-      - maven/install
+    jobs:      
       - maven/test # checkout, build, test, and upload test results
