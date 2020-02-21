@@ -28,7 +28,7 @@ jobs:
             - ~/.m2
           key: SpringMVCTest_Web-{{ checksum "~/pom-checksum" }}
 
-      - run: mvn package
+      - run: mvn package -e
 
 #      - run:
 #          name: Save test results
