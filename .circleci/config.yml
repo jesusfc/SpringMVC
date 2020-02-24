@@ -41,5 +41,5 @@ jobs:
 #          path: ~/test-results
 
       - store_artifacts:
-          path: my-service/target/my-service.jar
+          path: SpringMVCTest_Web/target/SpringMVCTest_Web.jar
 
