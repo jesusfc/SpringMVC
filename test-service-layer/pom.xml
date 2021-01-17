@@ -8,7 +8,7 @@
     <parent>
 		<relativePath>../pom.xml</relativePath>
 		<groupId>com.jesusfc</groupId>		
-		<artifactId>SpringMVCTest_Web</artifactId>
+		<artifactId>SpringMVC</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
           
