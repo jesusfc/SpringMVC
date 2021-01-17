@@ -60,7 +60,7 @@ public class WebContextListener implements ServletContextListener {
 			System.out.println("***************************************************************");
 			
 		} catch (Exception e) {
-			System.out.println("Error en lectura de propiedades:" + e);
+			System.out.println("Error en lectura de propiedades: " + e);
 		} finally {
 			if (fileInputStream != null) {
 				try {

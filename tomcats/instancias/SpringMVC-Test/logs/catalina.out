@@ -1661,7 +1661,7 @@ dic 19, 2019 11:21:42 AM org.apache.jasper.servlet.TldScanner scanJars
 INFORMACIÓN: Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
 *** file:/home/pmiinf61/MisPruebas/WorkSpace/SpringMVC-Test/src/main/resources/properties/log4j.properties file not found, so initializing log4j with BasicConfigurator
 [INFO] Inicio de la configuración de la aplicación
-0 [localhost-startStop-1] INFO com.config.WebContextListener  - Inicio de la configuración de la aplicación
+0 [localhost-startStop-1] INFO com.WebContextListener  - Inicio de la configuración de la aplicación
 Error en lectura de propiedades:java.io.FileNotFoundException: file:/home/pmiinf61/MisPruebas/WorkSpace/SpringMVC-Test/src/main/resources/properties/system.properties (No existe el archivo o el directorio)
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
@@ -1764,7 +1764,7 @@ dic 19, 2019 11:53:05 AM org.apache.jasper.servlet.TldScanner scanJars
 INFORMACIÓN: Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
 *** file:/home/pmiinf61/MisPruebas/WorkSpace/SpringMVC-Test/src/main/resources/properties/log4j.properties file not found, so initializing log4j with BasicConfigurator
 [INFO] Inicio de la configuración de la aplicación
-0 [localhost-startStop-1] INFO com.config.WebContextListener  - Inicio de la configuración de la aplicación
+0 [localhost-startStop-1] INFO com.WebContextListener  - Inicio de la configuración de la aplicación
 Error en lectura de propiedades:java.io.FileNotFoundException: file:/home/pmiinf61/MisPruebas/WorkSpace/SpringMVC-Test/src/main/resources/properties/system.properties (No existe el archivo o el directorio)
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
@@ -1884,7 +1884,7 @@ dic 20, 2019 10:11:39 AM org.apache.jasper.servlet.TldScanner scanJars
 INFORMACIÓN: Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
 *** file:/home/pmiinf61/MisPruebas/WorkSpace/SpringMVC-Test/src/main/resources/properties/log4j.properties file not found, so initializing log4j with BasicConfigurator
 [INFO] Inicio de la configuración de la aplicación
-0 [localhost-startStop-1] INFO com.config.WebContextListener  - Inicio de la configuración de la aplicación
+0 [localhost-startStop-1] INFO com.WebContextListener  - Inicio de la configuración de la aplicación
 Error en lectura de propiedades:java.io.FileNotFoundException: file:/home/pmiinf61/MisPruebas/WorkSpace/SpringMVC-Test/src/main/resources/properties/system.properties (No existe el archivo o el directorio)
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation

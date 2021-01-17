@@ -2,10 +2,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.jesusfc</groupId>
-	<artifactId>SpringMVCTest_Web</artifactId>
+	<artifactId>SpringMVC</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>SpringMVCTest_Web</name>
+	<name>SpringMVC</name>
 	<description>Proyecto padre multimodulo para dependencias</description>
 	<!-- http://maven.apache.org/pom.html#Aggregation -->
 
@@ -99,7 +99,7 @@
 		<module>test-database-dao</module>
 		<module>test-database-dao-jpa</module>
 		<module>test-database-dao-jpa-hibernate</module>
-		<module>SpringMVC-Test</module>
+		<module>SpringMVC-Web</module>
 	</modules>
 
 </project>

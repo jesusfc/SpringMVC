@@ -1,0 +1,1145 @@
+12-29 09:40:08 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" no encontrada
+Table "USERS" not found; SQL statement:
+select * from USERS [42102-154]
+12-29 09:40:24 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" no encontrada
+Table "USERS" not found; SQL statement:
+select * from USERS [42102-154]
+12-29 09:40:26 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" no encontrada
+Table "USERS" not found; SQL statement:
+select * from USERS [42102-154]
+12-29 09:41:05 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" no encontrada
+Table "USERS" not found; SQL statement:
+select * from USERS [42102-154]
+12-29 09:41:10 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" no encontrada
+Table "USERS" not found; SQL statement:
+select * from USERS [42102-154]
+12-29 09:41:14 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" no encontrada
+Table "USERS" not found; SQL statement:
+select * from USERS [42102-154]
+2021-01-08 08:06:01 jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:466)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-01-08 08:06:17 database: wrong user or password; user: "SA"
+org.h2.message.DbException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Engine.openSession(Engine.java:131)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.intellij.database.remote.jdbc.helpers.JdbcHelperImpl.connect(JdbcHelperImpl.java:617)
+	at com.intellij.database.remote.jdbc.impl.RemoteDriverImpl.connect(RemoteDriverImpl.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:461)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 31 more
+2021-01-08 08:06:22 database: wrong user or password; user: "SA"
+org.h2.message.DbException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Engine.openSession(Engine.java:131)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.intellij.database.remote.jdbc.helpers.JdbcHelperImpl.connect(JdbcHelperImpl.java:617)
+	at com.intellij.database.remote.jdbc.impl.RemoteDriverImpl.connect(RemoteDriverImpl.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:461)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 31 more
+2021-01-08 08:06:25 jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:466)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-01-08 08:06:27 jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:466)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-01-08 08:06:29 database: wrong user or password; user: "SA"
+org.h2.message.DbException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Engine.openSession(Engine.java:131)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.intellij.database.remote.jdbc.helpers.JdbcHelperImpl.connect(JdbcHelperImpl.java:617)
+	at com.intellij.database.remote.jdbc.impl.RemoteDriverImpl.connect(RemoteDriverImpl.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:461)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 31 more
+2021-01-08 08:06:31 database: wrong user or password; user: "SA"
+org.h2.message.DbException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Engine.openSession(Engine.java:131)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.intellij.database.remote.jdbc.helpers.JdbcHelperImpl.connect(JdbcHelperImpl.java:617)
+	at com.intellij.database.remote.jdbc.impl.RemoteDriverImpl.connect(RemoteDriverImpl.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:461)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 31 more
+2021-01-08 08:10:47 jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:466)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-01-08 09:39:08 database: close
+org.h2.message.DbException: IO Exception: "java.io.EOFException"; "/home/jesus/MisPruebas/GithubWS/SpringMVCTest_Web/database/H2Database.h2.db"
+IO Exception: "java.io.EOFException"; "/home/jesus/MisPruebas/GithubWS/SpringMVCTest_Web/database/H2Database.h2.db" [90031-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convertIOException(DbException.java:394)
+	at org.h2.store.FileStore.readFully(FileStore.java:284)
+	at org.h2.pagestore.PageStore.readPage(PageStore.java:1320)
+	at org.h2.pagestore.PageStore.getPage(PageStore.java:744)
+	at org.h2.pagestore.PageStreamTrunk$Iterator.next(PageStreamTrunk.java:252)
+	at org.h2.pagestore.PageLog.free(PageLog.java:216)
+	at org.h2.pagestore.PageStore.compact(PageStore.java:494)
+	at org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1517)
+	at org.h2.engine.Database.closeImpl(Database.java:1454)
+	at org.h2.engine.Database.close(Database.java:1373)
+	at org.h2.engine.Database.removeSession(Database.java:1307)
+	at org.h2.engine.Session.close(Session.java:963)
+	at org.h2.jdbc.JdbcConnection.close(JdbcConnection.java:453)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.close(RemoteConnectionImpl.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: IO Exception: "java.io.EOFException"; "/home/jesus/MisPruebas/GithubWS/SpringMVCTest_Web/database/H2Database.h2.db"
+IO Exception: "java.io.EOFException"; "/home/jesus/MisPruebas/GithubWS/SpringMVCTest_Web/database/H2Database.h2.db" [90031-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 32 more
+Caused by: java.io.EOFException
+	at org.h2.store.fs.FileUtils.readFully(FileUtils.java:361)
+	at org.h2.store.FileStore.readFully(FileStore.java:282)
+	... 29 more
+2021-01-08 09:39:21 jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:466)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-01-08 09:39:38 jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:466)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-01-08 09:39:50 jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:466)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-01-08 09:40:23 jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:466)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-01-08 09:40:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT * FROM[*]"; se esperaba "identifier"
+Syntax error in SQL statement "SELECT * FROM[*]"; expected "identifier"; SQL statement:
+select * from [42001-200]
+01-08 10:44:51 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" no encontrada
+Table "USERS" not found; SQL statement:
+select * from USERS where id = ? [42102-154]
+01-08 10:44:51 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" no encontrada
+Table "USERS" not found; SQL statement:
+select * from USERS [42102-154]
+2021-01-08 10:27:34 jdbc[4]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:466)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-01-08 10:34:11 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "USERS" no encontrada
+Table "USERS" not found; SQL statement:
+select * from users [42102-200]
+2021-01-08 10:34:15 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "USER" no encontrada
+Table "USER" not found; SQL statement:
+select * from user [42102-200]
+2021-01-08 10:34:17 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "USERS" no encontrada
+Table "USERS" not found; SQL statement:
+select * from userS [42102-200]
+2021-01-08 10:35:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS (
+                       id INTEGER IDENTITY PRIMARY KEY,
+                       nombre VARCHAR(15),
+                       apellido VARCHAR(15),
+                       edad INTEGER,
+                       soltero BOOLEAN,
+                       dni  VARCHAR(9),
+                       telefono  VARCHAR(9),
+                       email  VARCHAR(50)
+) [42101-200]
+2021-01-08 10:35:12 jdbc[5]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:466)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-01-08 10:35:24 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "USERS" no encontrada
+Table "USERS" not found; SQL statement:
+select * from userS [42102-200]
+2021-01-08 10:35:34 database: close
+org.h2.message.DbException: IO Exception: "java.io.EOFException"; "/home/jesus/MisPruebas/GithubWS/SpringMVCTest_Web/database/H2Database.h2.db"
+IO Exception: "java.io.EOFException"; "/home/jesus/MisPruebas/GithubWS/SpringMVCTest_Web/database/H2Database.h2.db" [90031-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convertIOException(DbException.java:394)
+	at org.h2.store.FileStore.readFully(FileStore.java:284)
+	at org.h2.pagestore.PageStore.readPage(PageStore.java:1320)
+	at org.h2.pagestore.PageStore.getPage(PageStore.java:744)
+	at org.h2.pagestore.PageStreamTrunk$Iterator.next(PageStreamTrunk.java:252)
+	at org.h2.pagestore.PageLog.free(PageLog.java:216)
+	at org.h2.pagestore.PageStore.compact(PageStore.java:494)
+	at org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1517)
+	at org.h2.engine.Database.closeImpl(Database.java:1454)
+	at org.h2.engine.Database.close(Database.java:1373)
+	at org.h2.engine.Database.removeSession(Database.java:1307)
+	at org.h2.engine.Session.close(Session.java:963)
+	at org.h2.jdbc.JdbcConnection.close(JdbcConnection.java:453)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.close(RemoteConnectionImpl.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: IO Exception: "java.io.EOFException"; "/home/jesus/MisPruebas/GithubWS/SpringMVCTest_Web/database/H2Database.h2.db"
+IO Exception: "java.io.EOFException"; "/home/jesus/MisPruebas/GithubWS/SpringMVCTest_Web/database/H2Database.h2.db" [90031-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 32 more
+Caused by: java.io.EOFException
+	at org.h2.store.fs.FileUtils.readFully(FileUtils.java:361)
+	at org.h2.store.FileStore.readFully(FileStore.java:282)
+	... 29 more
+2021-01-08 10:36:02 jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:466)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-01-08 10:36:33 jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:466)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+01-08 11:37:19 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-08 11:37:20 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-08 11:37:22 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-08 11:37:25 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-08 11:38:41 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-08 11:40:50 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-08 11:43:57 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-08 11:43:58 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-08 11:43:59 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-08 11:47:11 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-08 11:47:12 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-08 11:47:13 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-08 11:49:51 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-08 11:49:52 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-08 11:49:53 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+2021-01-08 12:39:10 database: close
+org.h2.message.DbException: IO Exception: "java.io.EOFException"; "/home/jesus/MisPruebas/GithubWS/SpringMVCTest_Web/database/H2Database.h2.db"
+IO Exception: "java.io.EOFException"; "/home/jesus/MisPruebas/GithubWS/SpringMVCTest_Web/database/H2Database.h2.db" [90031-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convertIOException(DbException.java:394)
+	at org.h2.store.FileStore.readFully(FileStore.java:284)
+	at org.h2.pagestore.PageStore.readPage(PageStore.java:1320)
+	at org.h2.pagestore.PageStore.getPage(PageStore.java:744)
+	at org.h2.pagestore.PageStreamTrunk$Iterator.next(PageStreamTrunk.java:252)
+	at org.h2.pagestore.PageLog.free(PageLog.java:216)
+	at org.h2.pagestore.PageStore.compact(PageStore.java:494)
+	at org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1517)
+	at org.h2.engine.Database.closeImpl(Database.java:1454)
+	at org.h2.engine.Database.close(Database.java:1373)
+	at org.h2.engine.Database.removeSession(Database.java:1307)
+	at org.h2.engine.Session.close(Session.java:963)
+	at org.h2.jdbc.JdbcConnection.close(JdbcConnection.java:453)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.close(RemoteConnectionImpl.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: IO Exception: "java.io.EOFException"; "/home/jesus/MisPruebas/GithubWS/SpringMVCTest_Web/database/H2Database.h2.db"
+IO Exception: "java.io.EOFException"; "/home/jesus/MisPruebas/GithubWS/SpringMVCTest_Web/database/H2Database.h2.db" [90031-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 32 more
+Caused by: java.io.EOFException
+	at org.h2.store.fs.FileUtils.readFully(FileUtils.java:361)
+	at org.h2.store.FileStore.readFully(FileStore.java:282)
+	... 29 more
+01-09 11:09:51 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:09:52 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:09:54 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:18:47 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:18:48 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:18:48 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:18:51 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:28:44 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:28:45 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:28:46 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:28:50 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:29:48 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:31:29 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:32:02 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:33:03 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:33:25 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:35:23 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:36:43 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:36:44 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:36:45 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:37:23 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:37:24 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:37:25 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:38:47 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:38:48 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:38:49 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:39:02 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:39:16 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:43:22 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:43:23 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:43:25 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-09 11:43:29 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-10 09:40:11 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-10 09:40:49 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-10 09:40:50 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-10 09:40:52 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-10 09:40:59 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-10 09:41:08 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-10 09:41:22 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-10 09:41:23 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-10 09:41:24 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-10 09:42:52 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-10 09:42:53 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-10 09:42:54 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-10 09:45:07 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-10 09:45:08 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-10 09:45:09 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-10 09:45:15 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 11:51:55 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 11:53:19 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 11:53:54 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 11:53:55 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 11:53:56 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 12:08:24 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 12:08:26 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 13:10:06 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 13:10:07 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 13:10:10 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 13:17:13 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 13:17:14 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 13:17:14 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 13:17:15 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 13:21:10 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 13:21:12 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 13:21:13 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 13:21:42 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 13:21:52 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 13:21:53 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 13:21:55 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 13:22:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 13:22:17 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 13:28:29 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 13:28:30 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 13:28:31 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 13:28:45 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 13:29:09 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 13:29:10 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 13:29:11 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-11 13:29:15 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-12 12:55:57 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-12 12:55:59 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-12 12:56:00 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-13 22:56:45 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-13 22:56:46 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-13 22:56:48 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-13 22:58:14 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-13 22:58:15 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-13 22:58:16 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-13 22:58:46 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-13 22:58:46 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-13 22:58:47 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-13 22:58:48 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-13 22:58:52 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-13 22:59:10 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-13 22:59:13 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-13 22:59:16 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-13 22:59:42 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-13 22:59:43 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-13 22:59:44 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-14 13:24:57 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-14 13:24:58 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-14 13:24:59 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-14 13:25:07 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-14 13:28:42 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-14 16:45:38 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-14 16:45:45 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-14 16:46:40 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-14 16:46:42 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-14 16:46:49 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-14 16:47:40 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-14 16:47:46 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-14 16:47:49 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-14 16:48:11 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-14 16:48:24 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-14 16:51:31 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-14 16:51:34 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-15 16:37:33 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-15 16:37:43 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-15 16:39:27 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
+01-15 16:42:52 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+CREATE TABLE USERS ( id INTEGER IDENTITY PRIMARY KEY, nombre VARCHAR(15), apellido VARCHAR(15), edad INTEGER, soltero BOOLEAN, dni VARCHAR(9), telefono VARCHAR(9), email VARCHAR(50) ) [42101-154]
