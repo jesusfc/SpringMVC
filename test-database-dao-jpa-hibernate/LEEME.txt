@@ -1,8 +1,4 @@
 Desarrollando una aplicación Spring MVC v5 + Spring Data JPA paso a paso
-https://www.uv.es/grimo/teaching/SpringMVCv5PasoAPaso/overview.html
-
-http://fruzenshtein.com/spring-jpa-data-hibernate-mysql/
-
 
 ==== SQL CLIENTE -- SQL SQUIRREL ==========================
 
