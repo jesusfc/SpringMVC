@@ -18,7 +18,7 @@
 		<apachetiles.version>3.0.8</apachetiles.version>
 		<angualarjs.version>1.7.5</angualarjs.version>
 		<webJars.bootstrap.version>3.3.6</webJars.bootstrap.version>
-		<jackson.version>2.9.5</jackson.version>
+		<jackson.version>2.9.10.8</jackson.version>
 	</properties>
 
 	<build>
