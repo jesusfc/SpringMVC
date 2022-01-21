@@ -15,7 +15,7 @@
 	</parent>
 
 	<properties>
-		<h2database.version>1.3.154</h2database.version>
+		<h2database.version>2.1.210</h2database.version>
 		<springData.version>2.0.7.RELEASE</springData.version>
 	</properties>
 
